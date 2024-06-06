@@ -7,8 +7,8 @@ def exibir_menu():
     print('3 - Área do Trapézio')
     print('4 - Sair do programa')
 
-def calcular_circulo(pi, raio):
-    area = pi * (raio * raio)
+def calcular_circulo(raio):
+    area = 3,141592 * (raio * raio)
     return area
 
 def calcular_triangulo(base, altura):
@@ -28,8 +28,7 @@ while True:
 
     match opcao1:
         case 1:
-            print('Área do Círculo: a = π r²')
-            pi = int(input('Informe o pi do círculo: '))
+            print('Área do Círculo: a = 3,141592 * r²')
             raio = int(input('Informe o raio do círculo: '))
 
             print(f'Área do Círculo:  {calcular_circulo(pi, raio)}')
